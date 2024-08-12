@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "*.hcl": "atlas-schema-sqlite"
+  },
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "schema/.*\\.hcl$",
+        "cmd": "atlas schema fmt ${file}"
+      }
+    ]
+  }
+}

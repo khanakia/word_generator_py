@@ -1,0 +1,14 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task --list-all
+    silent: true
+  
+  migrate:
+    desc: migrate schema
+    cmds:
+      - atlas schema apply -u "sqlite://db.sqlite3" -f schema/schema.hcl
