@@ -69,6 +69,11 @@ Here is an example of how to use the script:
     - `id` (INTEGER PRIMARY KEY AUTOINCREMENT): Unique identifier for each permutation.
     - `name` (TEXT): The generated permutation.
 
+## SQL commands
+```sql
+SELECT count(*) FROM words;
+```
+
 ## Permutation Calculator
 https://www.calculatorsoup.com/calculators/discretemathematics/permutations.php
 
